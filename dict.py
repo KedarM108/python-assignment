@@ -6,7 +6,6 @@ for x in str:
         count[x]+=1
     else:
         count[x]=1
-sorted(count.items())
 
 print("The count: ", count)
 dsc=dict(sorted(count.items(), key=operator.itemgetter(1), reverse=True))
